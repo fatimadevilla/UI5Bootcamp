@@ -2,14 +2,16 @@
 	xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
 	<App id="idAppControl">
 		<pages>
-			<Page title="{i18n>title}">
-				<content>
-					<Text text="Username"></Text>
-					<Input type="Text" value="{/field/username}" description="Hello {/field/username}" valueLiveUpdate="true" width="100%" id="username"></Input>
-					<Text text="Password"></Text>
-					<Input type="Password" id="password"></Input>
-					<Button id="loginButton" text="{i18n>loginButtonText}" press="onLoginPress"></Button>
-				</content>
+			<Page title="{i18n>homePageTitle}">
+				<Panel>
+					<content headerText="{i18n>headerText}">
+						<Text text="Username"></Text>
+						<Input type="Text" value="{/field/username}" description="Hello {/field/username}" valueLiveUpdate="true" width="100%" id="username"></Input>
+						<Text text="Password"></Text>
+						<Input type="Password" id="password"></Input>
+						<Button id="loginButton" text="{i18n>loginButtonText}" press="onLoginPress"></Button>
+					</content>
+				</Panel>
 			</Page>
 		</pages>
 	</App>
