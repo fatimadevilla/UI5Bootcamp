@@ -1,0 +1,16 @@
+<mvc:View controllerName="com.dxc.bootcamp.Bootcamp.controller.AppTest" xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+	<App id="idAppControl">
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+					<Text text="Username"></Text>
+					<Input type="Text" value="{/field/username}" description="Hello {/field/username}" valueLiveUpdate="true" width="100%" id="username"></Input>
+					<Text text="Password"></Text>
+					<Input type="Password" id="password"></Input>
+					<Button id="loginButton" text="{i18n>loginButtonText}" press="onLoginPress"></Button>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
